@@ -9,6 +9,8 @@ FORECAST_BASE_URL = "http://api.weatherapi.com/v1/forecast.json?key="
 HEADERS = {
      'content-type': "application/x-www-form-urlencoded"
     }
+
+    
 class WeatherConnClient():
 
     @staticmethod
