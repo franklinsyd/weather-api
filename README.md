@@ -31,7 +31,7 @@ weather api example using https://www.weatherapi.com/
     
     VOILLLLLLA, C'EST MAGNIFIQUE!   You are ready to test. Open up your browswer and try out some locations and periods (In this project, the period is in days... The API allows     up to 7 days forcasting)
     
-    The general API call is done as follow:  http://<YOUR_SERVER_IP>:8000/core/forecast/<Location_name>/<period>/ , you receive back the following for each day:
+    The general API call is done as follows:  http://<YOUR_SERVER_IP>:8000/core/forecast/<Location_name>/<period>/  , you receive back the following for each day:
     maximum temperature, the minimum temperature, the average temperature and humidity.
     
     LIKASI is my  birth down, it is located somewhere in the South of the Democratic Republic of Congo (DRC) - It rains all the time ...Hahaha, try it out:
