@@ -9,6 +9,12 @@ weather api example using https://www.weatherapi.com/
 4. Steps to run the project:
   
   - Copy the content of the repository into your a project folder (Name it how you like).
+  - All the magi happens in the following files:
+  
+    - your_project_folder/clients/weather_api_calls.py
+    - your_project_folder/core/views.py
+    - your_project_folder/core/tests.py
+    
   - In the following file:  your_project_folder/weather_api/settings.py , change the ALLOWED_HOSTS = ['192.168.5.5', 'localhost'] to your own domain.
   - cd into your_project_folder/ (Make sure you can see a file called manage.py) and run the following commands:
     - python manage.py makemigrations
