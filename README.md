@@ -15,8 +15,8 @@ weather api example using https://www.weatherapi.com/
     - python manage.py migrate
     - python manage.py runserver <YOUR_SERVER_IP>:8000
   - Check your teminal to ensure that you see something like below:
+      
       Performing system checks...
-
       System check identified no issues (0 silenced).
       December 18, 1999 - 13:23:57
       Django version 2.2.17, using settings 'weather_api.settings'
