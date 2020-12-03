@@ -1,10 +1,11 @@
 import requests
 import json
 
+#The link below shows how the call is constructed
+# http://api.weatherapi.com/v1/forecast.json?key=ebd2d4802a1647be8c6100439200312&q=Likasi&days=3
 #This is for testing purposes, do not push secrets keys onto production
 API_KEY = "ebd2d4802a1647be8c6100439200312"
 FORECAST_BASE_URL = "http://api.weatherapi.com/v1/forecast.json?key="
-# http://api.weatherapi.com/v1/forecast.json?key=ebd2d4802a1647be8c6100439200312&q=Likasi&days=3
 HEADERS = {
      'content-type': "application/x-www-form-urlencoded"
     }
