@@ -20,6 +20,9 @@ class WeatherConnClient():
         LOCATION_PERIOD = "&q=" + location + "&days=" + str(period)
         URL_WITH_PARAMS = FORECAST_BASE_URL + API_KEY + LOCATION_PERIOD
         response = requests.get(URL_WITH_PARAMS, headers=HEADERS)
-        #Convert .txt data to JSON data
-        json_body = json.loads(response.text)
-        return json_body
+        if response.status_code == 200:
+            #Convert .txt data to JSON data
+            json_body = json.loads(response.text)
+            return json_body
+        else:
+            return {"status": "There is an error in the call."}
