@@ -4,9 +4,10 @@ from clients.weather_api_calls import WeatherConnClient
 
 def weather_data_rendering(request, loc, days):
     response = WeatherConnClient.weatherapi_call(loc, days)
-    weather_data = {}
+    #Dictionary to hold the retrieved data
+    weather_data = {}  
+    #Get the location
     weather_data["location"] = response["location"]["name"]
-    
     #Loop through the response to get only what is required.
     for index in range(len(response["forecast"]["forecastday"])):
         weather_data["date"+"_"+ str(index)]= response["forecast"]["forecastday"][index]["date"]
